@@ -71,7 +71,7 @@ def AI_Classifier(data):
     PATH = './model/'
     device = torch.device('cpu')
     tokenizer = BertTokenizer.from_pretrained('bert-base-multilingual-cased')
-    model = torch.load('C:\dev\BareugoWeb\BareugoWeb\classify\model\model.pt', map_location=device)
+    model = torch.load('/home/ubuntu/BareugoWeb/BareugoWeb/classify/model/model.pt', map_location=device)
     model.to(device)
 
     # In[246]:
